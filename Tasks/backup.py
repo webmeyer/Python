@@ -10,14 +10,14 @@ source = ['C:\\Zenno\\test']
 # двойные кавычки внутри строки.
 
 #2 - Выбираем место для хранения рез.копий
-target_dir = 'C:\\Users\\Sitesoft\\Desktop'
+target_dir = 'C:\\VMs'
 
 #3 - Все файлы будут в zip - архиве
 #4 - Именем для зипа будет текущая дата и время
 target = target_dir + os.sep + time.strftime('%Y%m%d') + '.zip'
 
 #5 Используем ZIP для архивирования файлов
-zip_command = "zip -r {0} {1}".format(target, ' '.join(source))
+zip_command = '"C:\\Program Files (x86)\\GnuWin32\\bin\\zip.exe" -qr {0} {1}'.format(target, ' '.join(source))
 
 
 #Запускаем создание резеврной копии
