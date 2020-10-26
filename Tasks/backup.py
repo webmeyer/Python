@@ -4,7 +4,7 @@ import os
 import time
 
 #1 - Собираем нужные каталоги в список
-source = ['C:\\Zenno\\test', 'C:\\Zenno\\test2']
+source = ['C:\\Zenno\\test']
 
 # Заметьте, что для имён, содержащих пробелы, необходимо использовать
 # двойные кавычки внутри строки.
@@ -17,7 +17,7 @@ target_dir = 'C:\\Users\\Sitesoft\\Desktop'
 target = target_dir + os.sep + time.strftime('%Y%m%d') + '.zip'
 
 #5 Используем ZIP для архивирования файлов
-zip_command = "zip -qr {0} {1}".format(target, ' '.join(source))
+zip_command = "zip -r {0} {1}".format(target, ' '.join(source))
 
 
 #Запускаем создание резеврной копии
