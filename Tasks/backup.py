@@ -16,7 +16,7 @@ target_dir = 'C:\\VMs'
 #4 - Именем для зипа будет текущая дата и время
 target = target_dir + os.sep + time.strftime('%Y%m%d') + '.zip'
 
-#5 Используем ZIP для архивирования файлов
+#5 Используем ZIP для архивирования файлов (os.system)
 zip_command = '"C:\\Program Files (x86)\\GnuWin32\\bin\\zip.exe" -qr {0} {1}'.format(target, ' '.join(source))
 
 
