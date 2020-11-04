@@ -1,20 +1,29 @@
 #Example
 
-color1 = input()
-color2 = input()
+num = int(input())
 
-if(color1 == 'красный' and color2 == 'красный'):
-    print('красный')
-elif(color1 == 'синий' and color2 == 'синий'):
-    print('синий')
-elif(color1 == 'желтый' and color2 == 'желтый'):
-    print('желтый')
-else:
-    if((color1 == 'красный' and color2 == 'желтый') or (color1 == 'желтый' and color2 == 'красный')):
-        print('оранжевый')
-    elif((color1 == 'красный' and color2 == 'синий') or (color1 == 'синий' and color2 == 'красный')):
-        print('фиолетовый')
-    elif((color1 == 'синий' and color2 == 'желтый') or (color1 == 'желтый' and color2 == 'синий')):
+if num in range(0, 37, 1):
+    if(num == 0):
         print('зеленый')
-    else:
-        print('ошибка цвета')
+    elif(num in range(1, 11, 1)):
+        if(num % 2 == 0):
+            print('черный')
+        else:
+            print('красный')
+    elif (num in range(11, 19, 1)):
+        if (num % 2 == 0):
+            print('красный')
+        else:
+            print('черный')
+    elif (num in range(19, 29, 1)):
+        if (num % 2 == 0):
+            print('черный')
+        else:
+            print('красный')
+    elif (num in range(29, 37, 1)):
+        if (num % 2 == 0):
+            print('красный')
+        else:
+            print('черный')
+else:
+    print('ошибка ввода')
