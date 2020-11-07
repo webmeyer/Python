@@ -82,3 +82,65 @@ num1 = float(input())
 res = num1 - int(num1)
 print(round(res, 4))
 
+
+
+# Задание 8
+# Напишите программу, которая находит наименьшее и наибольшее из пяти чисел.
+
+num1 = int(input())
+num2 = int(input())
+num3 = int(input())
+num4 = int(input())
+num5 = int(input())
+
+# min = min(num1, num2, num3, num4, num5)
+# max = max(num1, num2, num3, num4, num5)
+
+print('Наименьшее число =', min)
+print('Наибольшее число =', max)
+
+
+
+# Задание 9
+# Напишите программу, которая упорядочивает три числа от большего к меньшему.
+
+num1 = int(input())
+num2 = int(input())
+num3 = int(input())
+
+# print(max(num1, num2, num3))
+# print((num1 + num2 + num3) - (max(num1, num2, num3) + min(num1,num2,num3)))
+# print(min(num1,num2,num3))
+
+
+
+# Задание 10
+# Назовем число интересным, если в нем разность максимальной и минимальной цифры равняется средней по величине цифре.
+# Напишите программу, которая определяет интересное число или нет.
+# Если число интересное, следует вывести – «Число интересное» иначе «Число неинтересное».
+
+num1 = int(input())
+
+a = num1 % 10
+b = num1 % 100
+b = b // 10
+c = num1 / 100
+c = c % 10
+
+minValue = min(a, b, c)
+maxValue = max(a, b, c)
+middle = (a + b + c) - (maxValue + minValue)
+
+print(int(minValue))
+print(int(maxValue))
+print(int(middle))
+
+if(int(middle) == int(maxValue) - int(minValue)):
+    print('Число интересное')
+else:
+    print('Число неинтересное')
+
+
+
+# Задание 11
+# Назовем число интересным, если в нем разность максимальной и минимальной цифры равняется средней по величине цифре.
