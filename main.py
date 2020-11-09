@@ -1,12 +1,12 @@
 #Example
 
-p1 = int(input())
-p2 = int(input())
+from math import *
 
-q1 = int(input())
-q2 = int(input())
+x1 = float(input())
+y1 = float(input())
 
-firstPoint = abs(p1 - q1)
-secondPoint = abs(p2 - q2)
+x2 = float(input())
+y2 = float(input())
 
-print(firstPoint + secondPoint)
+result = sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
+print(result)
