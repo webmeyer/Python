@@ -10,7 +10,7 @@ print(num3)
 
 
 # Задание 1
-# Напишите программу определяющую евклидово расстояние между двумя точками, координаты которых заданы.
+# Напишите программу определяющую Eвклидово расстояние между двумя точками, координаты которых заданы.
 
 from math import *
 
@@ -37,3 +37,24 @@ length = 2 * pi * radius
 
 print(square)
 print(length)
+
+
+
+# Задание 3
+# На вход программе подается два вещественных числа a и b, каждое на отдельной строке.
+# Программа должна вывести 4 числа – среднее арифметическое, геометрическое, гармоническое и квадратичное.
+
+from math import *
+
+a = float(input())
+b = float(input())
+
+medAriphmetic = (a + b) / 2
+medGeometry = sqrt(a * b)
+medGarmonic = (2 * a * b) / (a + b)
+medQuadratic = sqrt((a ** 2 + b ** 2) / 2)
+
+print(medAriphmetic)
+print(medGeometry)
+print(medGarmonic)
+print(medQuadratic)

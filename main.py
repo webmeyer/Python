@@ -2,11 +2,15 @@
 
 from math import *
 
-x1 = float(input())
-y1 = float(input())
+a = float(input())
+b = float(input())
 
-x2 = float(input())
-y2 = float(input())
+medAriphmetic = (a + b) / 2
+medGeometry = sqrt(a * b)
+medGarmonic = (2 * a * b) / (a + b)
+medQuadratic = sqrt((a ** 2 + b ** 2) / 2)
 
-result = sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
-print(result)
+print(medAriphmetic)
+print(medGeometry)
+print(medGarmonic)
+print(medQuadratic)
