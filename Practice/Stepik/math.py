@@ -58,3 +58,18 @@ print(medAriphmetic)
 print(medGeometry)
 print(medGarmonic)
 print(medQuadratic)
+
+
+
+# Задание 4
+# Напишите программу, вычисляющую значение тригонометрического выражения sin(x)+cos(x)+tan^2(x)
+# по заданному числу градусов x.
+# На вход программе подается одно вещественное число xx измеряемое в градусах.
+#
+
+from math import *
+
+x = float(input())
+
+trigonometry = sin(radians(x)) + cos(radians(x)) + (tan(radians(x))) ** 2
+print(trigonometry)
