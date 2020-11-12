@@ -2,8 +2,22 @@
 
 from math import *
 
-x = float(input())
+a = float(input())
+b = float(input())
+c = float(input())
 
-trigonometry = sin(radians(x)) + cos(radians(x)) + (tan(radians(x))) ** 2
+discr = (b ** 2) - 4 * a * c
 
-print(trigonometry)
+if(discr > 0):
+    x1 = (-b + sqrt(discr)) / (2 * a)
+    x2 = (-b - sqrt(discr)) / (2 * a)
+
+    print(min(x1, x2))
+    print(max(x1, x2))
+
+elif(discr == 0):
+    x = -b / (2 * a)
+    print(x)
+
+else:
+    print('Нет корней')
