@@ -19,3 +19,18 @@ count = int(input())
 
 for i in range(count):
     print(text)
+
+
+
+# Задание 3
+# Напишите программу, которая использует ровно три цикла for для печати следующей последовательности символов:
+# 6AAA, 5BBBB, 1E, 9TTTTT, G
+
+for _ in range(6):
+    print('AAA')
+for _ in range(5):
+    print('BBBB')
+print('E')
+for _ in range(9):
+    print('TTTTT')
+print('G')
