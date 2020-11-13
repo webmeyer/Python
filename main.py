@@ -1,4 +1,7 @@
 #Example
 
-for i in range(10):
-    print('Python is awesome!')
+text = input()
+count = int(input())
+
+for i in range(count):
+    print(text)
