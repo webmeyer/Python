@@ -1,8 +1,4 @@
 #Example
 
-mail = input()
-
-if("@", "." in mail):
-    print("YES")
-else:
-    print("NO")
+for i in range(10):
+    print('Python is awesome!')
