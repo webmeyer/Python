@@ -107,3 +107,5 @@ if("@" in mail and "." in mail):
     print("YES")
 else:
     print("NO")
+
+# Завершено
