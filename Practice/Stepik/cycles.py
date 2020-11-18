@@ -267,3 +267,17 @@ for i in range(n + 1):
     if i != 0:
         result *= i
 print(result)
+
+
+
+# Задание 18
+# На вход программе подаются 10 целых чисел, каждое на отдельной строке.
+# Программа должна вывести произведение отличных от нуля чисел.
+
+result = 1
+
+for i in range(1, 11):
+    num = int(input())
+    if(num != 0):
+        result *= num
+print(result)
