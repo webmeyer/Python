@@ -95,3 +95,20 @@ print(result)
 # На вход программе подается одно натуральное число, цена за услугу ведьмака.
 # Программа должна вывести минимально возможное количество чеканных монет для оплаты.
 
+cost = int(input())
+count = 0
+
+while(cost > 0):
+    if(cost >= 25):
+        cost -= 25
+        count += 1
+    elif(cost >= 10 and cost <= 25):
+        cost -= 10
+        count += 1
+    elif(cost >= 5 and cost <= 10):
+        cost -= 5
+        count += 1
+    elif(cost >= 1 and cost <= 5):
+        cost -= 1
+        count += 1
+print(count)
