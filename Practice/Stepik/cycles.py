@@ -295,3 +295,19 @@ for i in range(1, n + 1, 1):
     if(n % i == 0):
         result += i
 print(result)
+
+
+
+# Задание 20
+# На вход программе подается натуральное число n.
+# Напишите программу вычисления знакочередующей суммы 1-2+3-4+5-6 + (-1)^{n+1}n.
+
+n = int(input())
+result = 0
+
+for i in range(1, n + 1):
+    if(i % 2 == 0):
+        result -= i
+    else:
+        result += i
+print(result)
