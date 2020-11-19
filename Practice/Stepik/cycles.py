@@ -281,3 +281,17 @@ for i in range(1, 11):
     if(num != 0):
         result *= num
 print(result)
+
+
+
+# Задание 19
+# На вход программе подается натуральное число n.
+# Напишите программу, которая вычисляет сумму всех его делителей.
+
+n = int(input())
+result = 0
+
+for i in range(1, n + 1, 1):
+    if(n % i == 0):
+        result += i
+print(result)
