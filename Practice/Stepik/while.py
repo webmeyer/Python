@@ -6,6 +6,6 @@
 # Напишите программу, которая выводит члены данной последовательности.
 
 text = input()
-while(text != 'КОНЕЦ'):
+while(text != 'КОНЕЦ' and text != 'конец'):
     print(text)
     text = input()
