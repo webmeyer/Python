@@ -1,7 +1,8 @@
 #Example
 
-m = int(input())
-n = int(input())
-
-z = ((m - 1) // 2) * 2 + 1
-print(z)
+i = 7
+a = 5
+while i < 11:
+    a += i
+    i += 2
+print(a)
