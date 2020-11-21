@@ -137,3 +137,23 @@ while(num1 != 0):
     last_digit = num1 % 10
     print(last_digit, end='')
     num1 = num1 // 10
+
+
+
+# Задание 10
+# Дано натуральное число n, (n≥10).
+# Напишите программу, которая определяет его максимальную и минимальную цифры.
+
+num1 = int(input())
+minimum = num1 % 10
+maximum = num1 % 10
+
+while(num1 != 0):
+    last_digit = num1 % 10
+    if(last_digit > maximum):
+        maximum = last_digit
+    elif(last_digit < minimum):
+        minimum = last_digit
+    num1 = num1 // 10
+print('Максимальная цифра равна', maximum)
+print('Минимальная цифра равна', minimum)
