@@ -112,3 +112,16 @@ while(cost > 0):
         cost -= 1
         count += 1
 print(count)
+
+
+
+# Задание 8
+# Дано натуральное число.
+# Напишите программу, которая выводит его цифры в столбик в обратном порядке.
+
+num1 = int(input())
+
+while(num1 != 0):
+    last_digit = num1 % 10
+    print(last_digit)
+    num1 = num1 // 10
