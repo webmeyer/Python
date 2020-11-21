@@ -157,3 +157,43 @@ while(num1 != 0):
     num1 = num1 // 10
 print('Максимальная цифра равна', maximum)
 print('Минимальная цифра равна', minimum)
+
+
+
+# Задание 11
+# Дано натуральное число n, (n≥10).
+# Напишите программу, которая вычисляет:
+# - сумму его цифр;
+# - количество цифр в нем;
+# - произведение его цифр;
+# - среднее арифметическое его цифр;
+# - его первую цифру;
+# - сумму его первой и последней цифры.
+
+num1 = int(input())
+total = 0
+count = 0
+proizvedenie = 1
+average = 0
+first_and_last_digit = 0
+
+last_digit = num1 % 10 # - последняя цифра;
+
+while(num1 != 0):
+    first_digit = num1 % 10  # последняя цифра, по завершеню цикла станет первой цифрой числа;
+    total += first_digit # - сумма цифр;
+    count += 1 # - количество цифр;
+    proizvedenie *= first_digit # - произведение цифр;
+    num1 = num1 // 10 # убираем последнюю цифру числа
+
+average = total / count # - среднее арифметическое его цифр;
+first_and_last_digit = first_digit + last_digit # - сумма его первой и последней цифры.
+
+# Выводим в консоль по условию задачи
+
+print(total)
+print(count)
+print(proizvedenie)
+print(average)
+print(first_digit)
+print(first_and_last_digit)
