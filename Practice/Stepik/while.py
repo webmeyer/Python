@@ -125,3 +125,15 @@ while(num1 != 0):
     last_digit = num1 % 10
     print(last_digit)
     num1 = num1 // 10
+
+
+
+# Задание 9
+# Дано натуральное число.
+# Напишите программу, которая меняет порядок цифр числа на обратный.
+
+num1 = int(input())
+while(num1 != 0):
+    last_digit = num1 % 10
+    print(last_digit, end='')
+    num1 = num1 // 10
