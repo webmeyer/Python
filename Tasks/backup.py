@@ -6,9 +6,6 @@ import time
 #1 - Собираем нужные каталоги в список
 source = ['C:\\Zenno\\test']
 
-# Заметьте, что для имён, содержащих пробелы, необходимо использовать
-# двойные кавычки внутри строки.
-
 #2 - Выбираем место для хранения рез.копий
 target_dir = 'C:\\VMs'
 
@@ -20,7 +17,7 @@ target = target_dir + os.sep + time.strftime('%Y%m%d') + '.zip'
 zip_command = '"C:\\Program Files (x86)\\GnuWin32\\bin\\zip.exe" -qr {0} {1}'.format(target, ' '.join(source))
 
 
-#Запускаем создание резеврной копии
+#Запускаем создание резервной копии
 print('Читай:', zip_command)
 if os.system(zip_command) == 0:
     print('Резеврная копия успешно создана в', target)
