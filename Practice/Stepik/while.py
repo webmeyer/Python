@@ -197,3 +197,15 @@ print(proizvedenie)
 print(average)
 print(first_digit)
 print(first_and_last_digit)
+
+
+
+# Задание 12
+# Дано натуральное число n, (n > 9).
+# Напишите программу, которая определяет его вторую (с начала) цифру.
+
+num1 = int(input())
+while(num1 != 0):
+    last_digit = num1 % 10
+    print(last_digit, end='')
+    num1 = num1 // 10
