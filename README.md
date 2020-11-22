@@ -1,1 +1,2 @@
-"#Python learning. Theory + practice" 
+#Python learning. 
+Theory + practice 
