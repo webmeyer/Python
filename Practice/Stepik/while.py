@@ -218,15 +218,32 @@ while(num1 != 0):
 
 num1 = int(input())
 last_digit = num1 % 10
-flag = True
+print(last_digit)
+flag = False
 
 while(num1 > 0):
     first_digit = num1 % 10
-    if(first_digit != last_digit):
+    if(first_digit < last_digit):
         flag = False
     num1 = num1 // 10
-if(flag == True):
+if(flag == False):
     print('YES')
 else:
     print('NO')
+
+
+
+# Задание 14
+# Дано натуральное число.
+# Напишите программу, которая определяет, является ли последовательность его цифр при просмотре справа налево упорядоченной по неубыванию.
+
+num1 = int(input())
+flag = 'YES'
+
+while num1 // 10 != 0 :
+    first = num1 % 10
+    num1 = num1 // 10
+    if first > num1 % 10:
+        flag = 'NO'
+print(flag)
 
