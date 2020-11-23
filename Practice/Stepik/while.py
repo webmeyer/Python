@@ -209,3 +209,25 @@ while(num1 != 0):
     last_digit = num1 % 10
     print(last_digit, end='')
     num1 = num1 // 10
+
+
+
+# Задание 13
+# Дано натуральное число
+# Напишите программу, которая определяет, состоит ли указанное число из одинаковых цифр.
+
+num1 = int(input())
+last_digit = num1 % 10
+flag = True
+count = 0
+
+while(num1 > 0):
+    first_digit = num1 % 10
+    if(first_digit != last_digit):
+        flag = False
+    num1 = num1 // 10
+if(flag == True):
+    print('YES')
+else:
+    print('NO')
+
