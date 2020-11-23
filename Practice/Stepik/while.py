@@ -219,7 +219,6 @@ while(num1 != 0):
 num1 = int(input())
 last_digit = num1 % 10
 flag = True
-count = 0
 
 while(num1 > 0):
     first_digit = num1 % 10
