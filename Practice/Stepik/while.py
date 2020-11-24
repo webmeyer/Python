@@ -293,3 +293,116 @@ while n > 9:
         s += n % 10
     n //= 10
 print(s)
+
+
+
+# Задание 18
+# Ревью кода
+
+n = 8
+count = 0
+maximum = -10 ** 6 - 1
+for i in range(1, n + 1):
+    x = int(input())
+    if x % 4 == 0:
+        count += 1
+        if x > maximum:
+            maximum = x
+if count > 0:
+    print(count)
+    print(maximum)
+else:
+    print('NO')
+
+
+
+# Задание 19
+# Ревью кода
+
+n = 4
+count = 0
+maximum = -10 ** 6 - 1
+for i in range(1, n + 1):
+    x = int(input())
+    if x % 2 != 0:
+        count += 1
+        if x > maximum:
+            maximum = x
+if count > 0:
+    print(count)
+    print(maximum)
+else:
+    print('NO')
+
+
+
+# Задание 20
+# Ревью кода
+
+n = int(input())
+count = 0
+
+while(count < n):
+    print('*' * 19)
+    for i in range(n - 2):
+        print('*', ' ' * 15, '*')
+    count += 1
+    print('*' * 19)
+    break
+
+
+
+# Задание 21
+# Дано натуральное число (n > 99).
+# Напишите программу, которая определяет его третью (с начала) цифру.
+
+n = int(input())
+
+while(n > 99):
+    last_digit = n % 10
+    n //= 10
+print(last_digit)
+
+
+
+# Задание 22
+# Дано натуральное число.
+# Напишите программу, которая вычисляет:
+# - количество цифр 3 в нем;
+# - сколько раз в нем встречается последняя цифра;
+# - количество четных цифр;
+# - сумму его цифр, больших пяти;
+# - произведение цифр, больших семи (если цифр больших семи нет, то вывести 1, если такая цифра одна, то вывести ее);
+# - сколько раз в нем встречается цифры 0 и 5 (всего суммарно).
+
+n = int(input())
+three = 0 # количество цифр 3 в нем;
+last = n % 10 # последняя цифра в числе
+lastCount = 0 # сколько раз в нем встречается последняя цифра;
+even = 0 # количество четных цифр;
+amount = 0 # сумму его цифр, больших пяти;
+multiSeven = 1 # произведение цифр, больших семи (если цифр больших семи нет, то вывести 1, если такая цифра одна, то вывести ее);
+zeroFive = 0 # сколько раз в нем встречается цифры 0 и 5 (всего суммарно).
+
+while(n != 0):
+    last_digit = n % 10
+    if(last_digit == 3):
+        three += 1
+    if(last_digit % 2 == 0):
+        even += 1
+    if(last_digit > 5):
+        amount += last_digit
+    if(last_digit > 7):
+        multiSeven *= last_digit
+    if(last_digit == 0 or last_digit == 5):
+        zeroFive += 1
+    if(last_digit == last):
+        lastCount += 1
+    n //= 10
+
+print(three)
+print(lastCount)
+print(even)
+print(amount)
+print(multiSeven)
+print(zeroFive)
