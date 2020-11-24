@@ -229,3 +229,17 @@ for i in range(0, len(str1)):
 print('Количество гласных букв равно', totaloVovel)
 print('Количество согласных букв равно', totalConsonant)
 
+
+
+# Задание 18
+# На вход программе подается натуральное число, записанное в десятичной системе счисления.
+# Напишите программу, которая переводит данное число в двоичную систему счисления.
+
+number = int(input())
+countString = ''
+
+while(number != 0):
+    ost = number % 2
+    countString += str(ost)
+    number //= 2
+print(countString[::-1])
