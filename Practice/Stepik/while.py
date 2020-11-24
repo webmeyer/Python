@@ -279,3 +279,17 @@ for i in range(1, n + 1):
     elif(78 <= i <= 87):
         continue
     print(i)
+
+
+
+# ИТОГОВАЯ РАБОТА
+# Задание 17
+# Ревью кода
+
+n = int(input())
+s = 0
+while n > 9:
+    if n % 2 == 0:
+        s += n % 10
+    n //= 10
+print(s)
