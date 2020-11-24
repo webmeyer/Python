@@ -129,3 +129,21 @@ for i in range(len(str), 0, -1):
 
 # Задание 11
 # Напишите программу, которая выводит в столбик элементы строки в обратном порядке.
+
+name = input()
+lastname = input()
+surname = input()
+
+print(len(name[0]) + len(lastname[0]) + len(surname[0]))
+
+
+
+# Задание 12
+# На вход программе подаются три строки: имя, фамилия и отчество.
+# Напишите программу, которая выводит инициалы человека.
+
+name = input()
+lastname = input()
+surname = input()
+
+print(lastname[0] + name[0] + surname[0])
