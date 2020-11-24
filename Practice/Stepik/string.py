@@ -210,3 +210,22 @@ for i in range(0, len(str1)-1):
     if(str1[i] == str1[i + 1]):
         total += 1
 print(total)
+
+
+
+# Задание 17
+# На вход программе подается одна строка с буквами русского языка.
+# Напишите программу, которая определяет количество гласных и согласных букв.
+
+str1 = input()
+totaloVovel = 0
+totalConsonant = 0
+
+for i in range(0, len(str1)):
+    if(str1[i] in 'ауоыиэяюёеАУОЫИЭЯЮЁЕ'):
+        totaloVovel += 1
+    elif(str1[i] in 'бвгджзйклмнпрстфхцчшщБВГДЖЗЙКЛМНПРСТФХЦЧШЩ'):
+        totalConsonant += 1
+print('Количество гласных букв равно', totaloVovel)
+print('Количество согласных букв равно', totalConsonant)
+
