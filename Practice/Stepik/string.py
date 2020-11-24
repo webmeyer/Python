@@ -178,3 +178,21 @@ if(flag == True):
     print('Цифра')
 else:
     print('Цифр нет')
+
+
+# Задание 15
+# На вход программе подается одна строка.
+# Напишите программу, которая определяет сколько раз в строке встречаются символы + и *.
+
+str1 = input()
+totalPlus = 0
+totalMulti = 0
+
+for i in range(0, len(str1)):
+    if(str1[i] in '+'):
+        totalPlus += 1
+    elif(str1[i] in '*'):
+        totalMulti += 1
+
+print('Символ + встречается', totalPlus, 'раз')
+print('Символ * встречается', totalMulti, 'раз')
