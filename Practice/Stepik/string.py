@@ -252,3 +252,12 @@ print(countString[::-1])
 
 str1 = "In 2010, someone paid 10k Bitcoin for two pizzas."
 print(str1[:12])
+
+
+
+# Задание 20
+# Дополните приведенный код, используя срезы,
+# так чтобы он вывел последние 9 символов строки s
+
+str1 = "In 2010, someone paid 10k Bitcoin for two pizzas."
+print(s[-9:])
