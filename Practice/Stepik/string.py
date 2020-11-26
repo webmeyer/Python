@@ -243,3 +243,12 @@ while(number != 0):
     countString += str(ost)
     number //= 2
 print(countString[::-1])
+
+
+
+# Задание 19
+# Дополните приведенный код, используя срезы,
+# так чтобы он вывел первые 12 символов строки s
+
+str1 = "In 2010, someone paid 10k Bitcoin for two pizzas."
+print(str1[:12])
