@@ -270,3 +270,15 @@ print(s[-9:])
 
 str1 = "In 2010, someone paid 10k Bitcoin for two pizzas."
 print(s[::7])
+
+
+
+# Задание 22
+# Дополните приведенный код, используя срезы,
+# так чтобы он вывел строку s в обратном порядке.
+
+str1 = "In 2010, someone paid 10k Bitcoin for two pizzas."
+print(s[::-1])
+
+
+
