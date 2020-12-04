@@ -118,3 +118,26 @@ if(str1.endswith('.com') or str1.endswith('.ru')):
     print('YES')
 else:
     print('NO')
+
+
+
+# Задание 9
+# На вход программе подается строка текста.
+# Напишите программу, которая выводит на экран символ, который появляется наиболее часто.
+# Программа должна вывести символ, который появляется наиболее часто.
+
+str1 = input()
+maxCount = 0
+symbol = ''
+
+for i in range(0, len(str1)):
+    result = str1.count(str1[i])
+    if(result >= maxCount):
+        maxCount = result
+        symbol = str1[i]
+print(symbol)
+
+
+
+# Задание 10
+# На вход программе подается строка текста.
