@@ -67,3 +67,19 @@ str1 = input()
 
 for i in range(0, len(str1)):
     print(ord(str1[i]), end=' ')
+
+
+
+# Задание 7
+# На вход программе подается строка текста.
+# Напишите программу, которая заменяет все вхождения цифры 1 на слово «one».
+
+s = input()
+t = ''
+for i in range(len(s)):
+    if i == 1:
+        t = s.replace('1', 'one')
+print(t)
+
+
+
