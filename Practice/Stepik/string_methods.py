@@ -35,5 +35,11 @@ print(s)
 
 
 # Задание 4
-# Дополните приведенный код, используя форматирование строк с помощью метода format, так чтобы он вывел текст:
+# Дополните приведенный код, используя форматирование строк с помощью f-строк, так чтобы он вывел текст:
 # «In 2010, someone paid 10k Bitcoin for two pizzas.» (без кавычек).
+
+year = 2010
+amount = '10K'
+currency = 'Bitcoin'
+
+print(f'In {year}, someone paid {amount} {currency} for two pizzas.')
