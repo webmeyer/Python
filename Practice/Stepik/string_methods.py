@@ -76,10 +76,16 @@ for i in range(0, len(str1)):
 
 s = input()
 t = ''
-for i in range(len(s)):
+for i in range(0, len(s) + 1)):
     if i == 1:
         t = s.replace('1', 'one')
 print(t)
+
+
+
+# Задание 8
+# На вход программе подается строка текста.
+# Напишите программу, которая заменяет все вхождения цифры 1 на слово «one».
 
 
 
