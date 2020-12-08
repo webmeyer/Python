@@ -67,3 +67,19 @@ for i in range(n):
     string = str(input())
     new_list.append(string)
 print(new_list)
+
+
+
+# Задача 6
+# Напишите программу, выводящую следующий список:
+# ['a', 'bb', 'ccc', 'dddd', 'eeeee', 'ffffff', ...]
+# Примечание. Последний элемент списка состоит из 26 символов z.
+
+abc = 'abcdefghijklmnopqrstuvwxyz'
+abc_list = []
+count = 1
+
+for i in range(len(abc)):
+    abc_list.append(abc[i] * count)
+    count += 1
+print(abc_list)
