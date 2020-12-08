@@ -53,3 +53,17 @@ if 5 in numbers and 17 in numbers:
 else:
     print('NO')
 print(numbers[1:-1:1])
+
+
+
+# Задача 5
+# На вход программе подается натуральное число n, а затем n строк.
+# Напишите программу, которая создает из указанных строк список и выводит его.
+
+n = int(input())
+new_list = []
+
+for i in range(n):
+    string = str(input())
+    new_list.append(string)
+print(new_list)
