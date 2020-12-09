@@ -95,3 +95,22 @@ for i in range(len(numbers)):
     quatro = (numbers[i] * numbers[i])
     sum += quatro
 print(sum)
+
+
+
+# Задача 8
+# На вход программе подается натуральное число n, а затем n целых чисел.
+# Напишите программу, которая для каждого введенного числа x выводит значение функции f(x) = x^2 + 2x + 1f(x) = x + 2x + 1, каждое на отдельной строке.
+
+n = int(input())
+numbers = []
+total = []
+
+for i in range(n):
+    number = int(input())
+    numbers.append(number)
+    quatro = (number + 1) ** 2
+    total.append(quatro)
+print(*numbers, sep='\n')
+print()
+print(*total, sep='\n')
