@@ -130,3 +130,20 @@ for i in range(n):
     quat = num1 ** 3
     quatro.append(quat)
 print(quatro)
+
+
+
+# Задача 10
+# На вход программе подается натуральное число n, а затем n целых чисел.
+# Напишите программу, которая создает из указанных чисел список, затем удаляет все элементы стоящие по нечетным индексам, а затем выводит полученный список.
+
+n = int(input())
+books = []
+
+for i in range(n):
+    abc = input()
+    k = int(input())
+    books.append(abc[k])
+
+books = ''.join(books)
+print(books)
