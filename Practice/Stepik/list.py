@@ -138,12 +138,11 @@ print(quatro)
 # Напишите программу, которая создает из указанных чисел список, затем удаляет все элементы стоящие по нечетным индексам, а затем выводит полученный список.
 
 n = int(input())
-books = []
+numbers = []
 
-for i in range(n):
-    abc = input()
-    k = int(input())
-    books.append(abc[k])
+for i in range(n - 1):
+    num1 = int(input())
+    numbers.append(num1)
 
-books = ''.join(books)
-print(books)
+del numbers[::2]
+print(numbers)
