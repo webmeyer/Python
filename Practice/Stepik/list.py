@@ -114,3 +114,19 @@ for i in range(n):
 print(*numbers, sep='\n')
 print()
 print(*total, sep='\n')
+
+
+
+# Задача 9
+# На вход программе подается натуральное число n, а затем n целых чисел.
+# Напишите программу, которая создает из указанных чисел список их кубов.
+
+n = int(input())
+numbers = []
+quatro = []
+
+for i in range(n):
+    num1 = int(input())
+    quat = num1 ** 3
+    quatro.append(quat)
+print(quatro)
