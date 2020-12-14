@@ -183,3 +183,20 @@ print('\n'.join(input().split('\\')))
 numbers = (int(c) for c in input().split())
 for num in numbers:
     print('+' * num)
+
+
+
+# Задача 14
+# На вход программе подается строка текста, содержащая 4 целых числа разделенных точкой.
+# Напишите программу, которая определяет является ли введенная строка текста корректным ip-адресом.
+
+ip = input().split('.')
+adress_valid_list = []
+
+for addr in ip:
+    if 0 <= int(addr) <= 255:
+        adress_valid_list.append(addr)
+if len(adress_valid_list) == 4:
+    print('ДА')
+else:
+    print('НЕТ')
