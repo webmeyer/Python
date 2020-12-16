@@ -325,3 +325,25 @@ for i in range(n):
     else:
         continue
 print(*words_list, sep='\n')
+
+
+
+# Задача 23
+# На вход программе подается натуральное число n, затем n строк, затем еще одна строка — поисковый запрос.
+# Напишите программу, которая выводит все введенные строки, в которых встречается поисковый запрос.
+
+n = int(input())
+strings_list = []
+filtration_list = []
+
+for i in range(n):
+    strings = input()
+    strings_list.append(strings)
+
+keyword = input().lower()
+
+for string in strings_list:
+    if keyword in string.lower():
+        filtration_list.append(string)
+
+print(*filtration_list, sep='\n')
