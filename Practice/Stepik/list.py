@@ -274,3 +274,17 @@ for i in range(n):
 
 del numbers_list[1::2]
 print(numbers_list)
+
+
+
+# Задача 20
+# На вход программе подается натуральное число n, а затем nn строк.
+# Напишите программу, которая создает список из символов всех строк, а затем выводит его.
+
+n = int(input())
+numbers_list = []
+
+for i in range(n):
+    numb = int(input())
+    numbers_list.extend(numb)
+print(numbers_list)
