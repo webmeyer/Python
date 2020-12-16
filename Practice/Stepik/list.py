@@ -308,3 +308,20 @@ numbers_list.remove(max_num)
 numbers_list.remove(min_num)
 
 print(*numbers_list, sep='\n')
+
+
+
+# Задача 22
+# На вход программе подается натуральное число n, а затем n строк.
+# Напишите программу, которая выводит только уникальные строки, в том же порядке, в котором они были введены.
+
+n = int(input())
+words_list = []
+
+for i in range(n):
+    str1 = input()
+    if str1 not in words_list:
+        words_list.append(str1)
+    else:
+        continue
+print(*words_list, sep='\n')
