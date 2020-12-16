@@ -417,3 +417,17 @@ maximum  =  numbers.index(max(numbers))
 numbers[minimum],  numbers[maximum]  =  max(numbers),  min(numbers)
 
 print(*numbers)
+
+
+
+# Задача 26
+# На вход программе подается строка, содержащая английский текст.
+# Напишите программу, которая подсчитывает общее количество артиклей: 'a', 'an', 'the'
+
+abc = input().lower().split(' ')
+cnt1 = abc.count('a')
+cnt2 = abc.count('an')
+cnt3 = abc.count('the')
+
+total_cnt = cnt1 + cnt2 + cnt3
+print('Общее количество артиклей:', total_cnt)
