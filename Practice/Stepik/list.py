@@ -347,3 +347,39 @@ for string in strings_list:
         filtration_list.append(string)
 
 print(*filtration_list, sep='\n')
+
+
+
+# Задача 23
+# На вход программе подается натуральное число n, затем n строк,  затем число k — количество поисковых запросов, затем k строк — поисковые запросы.
+# Напишите программу, которая выводит все введенные строки, в которых встречаются все поисковые запросы.
+
+n = int(input())
+strings_list = []
+keywords_list = []
+result_list = []
+
+for i in range(n):
+    strings = input('Input search string: ')
+    strings_list.append(strings)
+
+k = int(input())
+
+for j in range(k):
+    keyword = input().lower()
+    keywords_list.append(keyword)
+
+print(keywords_list)
+#
+# flag = False
+#
+# for string in strings_list:
+#     for key in keywords_list:
+#         if key in string.lower():
+#             result_list.append(string)
+#             flag == True
+#         else:
+#             continue
+#
+# print(result_list)
+
