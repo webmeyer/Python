@@ -403,3 +403,17 @@ del numbers[0]
 numbers *= 2
 numbers.insert(3, 25)
 print(numbers)
+
+
+
+# Задача 25
+# На вход программе подается строка текста, содержащая различные натуральные числа. Из данной строки формируется список чисел.
+# Напишите программу, которая меняет местами минимальный и максимальный элемент этого списка.
+
+numbers = input().split()
+
+minimum  =  numbers.index(min(numbers))
+maximum  =  numbers.index(max(numbers))
+numbers[minimum],  numbers[maximum]  =  max(numbers),  min(numbers)
+
+print(*numbers)
