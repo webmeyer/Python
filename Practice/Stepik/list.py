@@ -238,3 +238,23 @@ for i in range(1, number + 1):
     if number % i == 0:
         numbers.append(i)
 print(numbers)
+
+
+
+# Задача 18
+# На вход программе подается натуральное число n ≥ 2, а затем n целых чисел.
+# Напишите программу, которая создает из указанных чисел список, состоящий из сумм соседних чисел (0 и 1, 1 и 2, 2 и 3 и т.д.).
+
+n = int(input())
+numbers_list = []
+total_list = []
+
+for i in range(n):
+    numb = int(input())
+    numbers_list.append(numb)
+
+while len(numbers_list) > 1:
+    total = numbers_list[0] + numbers_list[1]
+    del numbers_list[0]
+    total_list.append(total)
+print(total_list)
