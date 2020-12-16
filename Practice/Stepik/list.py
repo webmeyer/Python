@@ -431,3 +431,17 @@ cnt3 = abc.count('the')
 
 total_cnt = cnt1 + cnt2 + cnt3
 print('Общее количество артиклей:', total_cnt)
+
+
+
+# Задача 27
+# На вход программе подается строка текста, содержащая целые числа. Из данной строки формируется список чисел.
+# Напишите программу, которая сортирует и выводит данный список сначала по возрастанию, а затем по убыванию.
+
+numbers = input().split()
+int_numbers = [int(num) for num in numbers]
+numbers = sorted(int_numbers)
+numbers_r = sorted(int_numbers, reverse=True)
+
+print(' '.join(map(str, numbers)))
+print(' '.join(map(str, numbers_r)))
