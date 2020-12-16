@@ -258,3 +258,19 @@ while len(numbers_list) > 1:
     del numbers_list[0]
     total_list.append(total)
 print(total_list)
+
+
+
+# Задача 19
+# На вход программе подается натуральное число n, а затем n целых чисел.
+# Напишите программу, которая создает из указанных чисел список, затем удаляет все элементы стоящие по нечетным индексам, а затем выводит полученный список.
+
+n = int(input())
+numbers_list = []
+
+for i in range(n):
+    numb = int(input())
+    numbers_list.append(numb)
+
+del numbers_list[1::2]
+print(numbers_list)
