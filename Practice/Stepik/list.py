@@ -278,7 +278,7 @@ print(numbers_list)
 
 
 # Задача 20
-# На вход программе подается натуральное число n, а затем nn строк.
+# На вход программе подается натуральное число n, а затем n строк.
 # Напишите программу, которая создает список из символов всех строк, а затем выводит его.
 
 n = int(input())
@@ -288,3 +288,23 @@ for i in range(n):
     numb = int(input())
     numbers_list.extend(numb)
 print(numbers_list)
+
+
+
+# Задача 21
+# На вход программе подается натуральное число n, а затем n различных натуральных чисел.
+# Напишите программу, которая удаляет наименьшее и наибольшее значение из указанных чисел, а затем выводит оставшиеся числа каждое на отдельной строке, не меняя их порядок.
+
+n = int(input())
+numbers_list = []
+
+for i in range(n):
+    number = int(input())
+    numbers_list.append(number)
+min_num = min(numbers_list)
+max_num = max(numbers_list)
+
+numbers_list.remove(max_num)
+numbers_list.remove(min_num)
+
+print(*numbers_list, sep='\n')
