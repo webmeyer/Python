@@ -475,3 +475,11 @@ keywords = ['False', 'True', 'None', 'and', 'with', 'as', 'assert', 'break', 'cl
 
 new_keywords = [word for word in keywords if len(word) >= 5]
 print(new_keywords)
+
+
+
+# Задача 31
+# Дополните приведенный код, используя списочное выражение, так чтобы получить список всех чисел палиндромов от 100 до 1000.
+
+palindromes = [i for i in range(1000) if i > 100 and i % 10 == i // 100]
+print(palindromes)
