@@ -1,14 +1,9 @@
 # Example
 
-a = [1, 7, -3, 9, 0, -67, 34, 12, 45, 1000, 6,  8, -2, 99]
-n = len(a)
+words = input().split()
+new_words = []
 
-for i in range(1, n):
-    elem = a[i]  # первый элемент из неотсортированной части списка
-    j = i
-    while j >= 1 and a[j - 1] > elem:
-        a[j] = a[j - 1]
-        j -= 1
-    a[j] = elem
-
-print('Отсортированный список:', a)
+for word in words:
+    new_word = word[1:] + word[0] + 'ки'
+    new_words.append(new_word)
+print(*new_words, sep=' ')

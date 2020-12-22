@@ -483,3 +483,17 @@ print(new_keywords)
 
 palindromes = [i for i in range(1000) if i > 100 and i % 10 == i // 100]
 print(palindromes)
+
+
+
+# Задача 32
+# Проверить валидность ввода номера телефона (с 7 и без неё), чтобы не было букв и длина полей совпадала
+
+n = input().split("-")
+c = [len(i) for i in n]
+if c == [3, 3, 4] and ''.join(n).isdigit():
+    print("YES")
+elif c == [1, 3, 3, 4] and ''.join(n).isdigit() and n[0] == '7':
+    print("YES")
+else:
+    print("NO")
