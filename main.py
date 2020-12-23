@@ -1,9 +1,12 @@
 # Example
 
-words = input().split()
-new_words = []
+def draw_box():
+    b = 14
+    a = 10
+    simvol = '*'
+    print(simvol * a)
+    for i in range(b - 2):
+        print(simvol, ' ' * (a - 2), simvol, sep='')
+    print(simvol * a)
 
-for word in words:
-    new_word = word[1:] + word[0] + 'ки'
-    new_words.append(new_word)
-print(*new_words, sep=' ')
+draw_box()
