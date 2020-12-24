@@ -1,12 +1,8 @@
 # Example
 
-def draw_box():
-    b = 14
-    a = 10
-    simvol = '*'
-    print(simvol * a)
-    for i in range(b - 2):
-        print(simvol, ' ' * (a - 2), simvol, sep='')
-    print(simvol * a)
+def draw_triangle():
+    n = 10
+    for i in range(1, n + 1):
+        print('*' * i)
 
-draw_box()
+draw_triangle()

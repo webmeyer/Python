@@ -21,3 +21,8 @@ draw_box()
 # Напишите функцию draw_triangle(), которая выводит звездный прямоугольный треугольник с катетами, равными 10
 
 def draw_triangle():
+    n = 10
+    for i in range(1, n + 1):
+        print('*' * i)
+
+draw_triangle()
