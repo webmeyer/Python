@@ -1,8 +1,9 @@
 # Example
 
-def draw_triangle():
-    n = 10
-    for i in range(1, n + 1):
-        print('*' * i)
+# Задача 3
+# Напишите функцию
+def draw_box(width, height):
+    for i in range(width):
+        print('*' * height)
 
-draw_triangle()
+draw_box(10, 14)

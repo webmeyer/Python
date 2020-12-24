@@ -26,3 +26,13 @@ def draw_triangle():
         print('*' * i)
 
 draw_triangle()
+
+
+
+# Задача 3
+# Напишите функцию c аргументами, которая выводит звездный прямоугольный треугольник с катетами, равными 10
+def draw_box(width, height):
+    for i in range(width):
+        print('*' * height)
+
+draw_box(10, 14)
