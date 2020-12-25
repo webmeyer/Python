@@ -21,3 +21,39 @@ draw_box()
 # Напишите функцию draw_triangle(), которая выводит звездный прямоугольный треугольник с катетами, равными 10
 
 def draw_triangle():
+    n = 10
+    for i in range(1, n + 1):
+        print('*' * i)
+
+draw_triangle()
+
+
+
+# Задача 3
+# Напишите функцию c аргументами, которая выводит звездный прямоугольный треугольник с катетами, равными 10
+def draw_box(width, height):
+    for i in range(width):
+        print('*' * height)
+
+draw_box(10, 14)
+
+
+
+# Задача 4
+# Напишите функцию draw_triangle(fill, base), которая принимает два параметра:
+# Сменим файл
+# fill – символ заполнитель;
+# base – величина основания равнобедренного треугольника;
+# а затем выводит его.
+
+def draw_triangle(fill, base):
+    a = list(range(1, base // 2 + 1 + 1)) + list(range(base // 2, 0, -1))
+    for i in a:
+        print(fill * i)
+
+# считываем данные
+fill = input()
+base = int(input())
+
+# вызываем функцию
+draw_triangle(fill, base)
