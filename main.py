@@ -1,12 +1,10 @@
 # Example
 
-def draw_box():
-    b = 14
-    a = 10
-    simvol = '*'
-    print(simvol * a)
-    for i in range(b - 2):
-        print(simvol, ' ' * (a - 2), simvol, sep='')
-    print(simvol * a)
+def print_fio(name, surname, patronymic):
+    print(surname[0].upper(), name[0].upper(), patronymic[0].upper(), sep='')
 
-draw_box()
+# считываем данные
+name, surname, patronymic = input(), input(), input()
+
+# вызываем функцию
+print_fio(name,surname,patronymic)
