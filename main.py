@@ -1,10 +1,17 @@
 # Example
 
-def print_fio(name, surname, patronymic):
-    print(surname[0].upper(), name[0].upper(), patronymic[0].upper(), sep='')
+# объявление функции
+def print_digit_sum(num):
+    total = 0
+    while num != 0:
+        last_digit = num % 10
+        if last_digit > 0:
+            total += last_digit
+        num = num // 10
+    print(total)
 
 # считываем данные
-name, surname, patronymic = input(), input(), input()
+num = int(input())
 
 # вызываем функцию
-print_fio(name,surname,patronymic)
+print_digit_sum(num)
