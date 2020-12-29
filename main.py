@@ -1,15 +1,12 @@
 # Example
 
 # объявление функции
-def find_all(target, symbol):
-    target_list = []
-    for i in range(len(target)):
-        if target[i] == symbol:
-            target_list.append(i)
-    return target_list
+def merge(list1, list2):
+    return sorted(list1 + list2)
 
-s = input()
-char = input()
+# считываем данные
+numbers1 = [int(c) for c in input().split()]
+numbers2 = [int(c) for c in input().split()]
 
 # вызываем функцию
-print(find_all(s, char))
+print(merge(numbers1, numbers2))
