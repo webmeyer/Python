@@ -8,8 +8,12 @@ def get_factors(num):
             numbers.append(i)
     return numbers
 
+
+def number_of_factors(num):
+    return len(get_factors(num))
+
 # считываем данные
 n = int(input())
 
 # вызываем функцию
-print(get_factors(n))
+print(number_of_factors(n))
