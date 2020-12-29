@@ -233,3 +233,18 @@ numbers1 = [int(c) for c in input().split()]
 for _ in range(1, n):
     numbers1 = quick_merge(numbers1, [int(c) for c in input().split()])
 print(*numbers1)
+
+
+
+# Задача 14
+# Напишите функцию, которая принимает в качестве аргументов три натуральных числа,
+# и возвращает значение True если существует невырожденный треугольник со сторонами side1, side2, side3 и False в противном случае.
+
+def is_valid_triangle(side1, side2, side3):
+    return ((a + b) > c) and ((a + c) > b) and ((b + c) > a)
+
+# считываем данные
+a, b, c = int(input()), int(input()), int(input())
+
+# вызываем функцию
+print(is_valid_triangle(a, b, c))
