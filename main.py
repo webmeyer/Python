@@ -1,10 +1,8 @@
 # Example
 
 # объявление функции
-def convert_to_miles(km):
-    miles = km * 0.6214
-    return float(miles)
+def get_days(month):
+    monthes = [31,28,31,30,31,30,31,31,30,31,30,31]
+    return monthes[month - 1]
 
-print(convert_to_miles(1))
-print(convert_to_miles(5))
-print(convert_to_miles(10))
+print(get_days(9))

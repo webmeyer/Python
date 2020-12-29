@@ -104,8 +104,7 @@ print_digit_sum(num)
 
 # ФУНКЦИИ С ВОЗВРАТОМ ЗНАЧЕНИЙ
 # Задача 7
-# Напишите функцию convert_to_miles(km),
-# которая принимает в качестве аргумента расстояние в километрах и возвращает расстояние в милях.
+# Напишите функцию, которая принимает в качестве аргумента расстояние в километрах и возвращает расстояние в милях.
 
 def convert_to_miles(km):
     miles = km * 0.6214
@@ -114,3 +113,16 @@ def convert_to_miles(km):
 print(convert_to_miles(1))
 print(convert_to_miles(5))
 print(convert_to_miles(10))
+
+num = int(input())
+print(convert_to_miles(num))
+
+# Задача 8
+# Напишите функцию, которая принимает в качестве аргумента номер месяца и возвращает количество дней в данном месяце.
+
+def get_days(month):
+    monthes = [31,28,31,30,31,30,31,31,30,31,30,31]
+    return monthes[month - 1]
+
+num = int(input())
+print(get_days(num))
