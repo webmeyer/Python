@@ -117,6 +117,8 @@ print(convert_to_miles(10))
 num = int(input())
 print(convert_to_miles(num))
 
+
+
 # Задача 8
 # Напишите функцию, которая принимает в качестве аргумента номер месяца и возвращает количество дней в данном месяце.
 
@@ -126,3 +128,21 @@ def get_days(month):
 
 num = int(input())
 print(get_days(num))
+
+
+
+# Задача 9
+# Напишите функцию, принимающую в качестве аргумента натуральное число и возвращающую список всех делителей данного числа.
+
+def get_factors(num):
+    numbers = []
+    for i in range(1, num + 1):
+        if num % i == 0:
+            numbers.append(i)
+    return numbers
+
+# считываем данные
+n = int(input())
+
+# вызываем функцию
+print(get_factors(n))

@@ -1,8 +1,15 @@
 # Example
 
 # объявление функции
-def get_days(month):
-    monthes = [31,28,31,30,31,30,31,31,30,31,30,31]
-    return monthes[month - 1]
+def get_factors(num):
+    numbers = []
+    for i in range(1, num + 1):
+        if num % i == 0:
+            numbers.append(i)
+    return numbers
 
-print(get_days(9))
+# считываем данные
+n = int(input())
+
+# вызываем функцию
+print(get_factors(n))
