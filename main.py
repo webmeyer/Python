@@ -1,17 +1,10 @@
 # Example
 
 # объявление функции
-def print_digit_sum(num):
-    total = 0
-    while num != 0:
-        last_digit = num % 10
-        if last_digit > 0:
-            total += last_digit
-        num = num // 10
-    print(total)
+def convert_to_miles(km):
+    miles = km * 0.6214
+    return float(miles)
 
-# считываем данные
-num = int(input())
-
-# вызываем функцию
-print_digit_sum(num)
+print(convert_to_miles(1))
+print(convert_to_miles(5))
+print(convert_to_miles(10))

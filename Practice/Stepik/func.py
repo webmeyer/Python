@@ -81,7 +81,7 @@ print_fio(name,surname,patronymic)
 
 
 
-# Задание 6
+# Задача 6
 # Напишите функцию print_digit_sum(), которая принимает одно целое число num и выводит на печать сумму его цифр.
 
 # объявление функции
@@ -99,3 +99,18 @@ num = int(input())
 
 # вызываем функцию
 print_digit_sum(num)
+
+
+
+# ФУНКЦИИ С ВОЗВРАТОМ ЗНАЧЕНИЙ
+# Задача 7
+# Напишите функцию convert_to_miles(km),
+# которая принимает в качестве аргумента расстояние в километрах и возвращает расстояние в милях.
+
+def convert_to_miles(km):
+    miles = km * 0.6214
+    return float(miles)
+
+print(convert_to_miles(1))
+print(convert_to_miles(5))
+print(convert_to_miles(10))
