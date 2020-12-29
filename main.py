@@ -1,19 +1,15 @@
 # Example
 
 # объявление функции
-def get_factors(num):
-    numbers = []
-    for i in range(1, num + 1):
-        if num % i == 0:
-            numbers.append(i)
-    return numbers
+def find_all(target, symbol):
+    target_list = []
+    for i in range(len(target)):
+        if target[i] == symbol:
+            target_list.append(i)
+    return target_list
 
-
-def number_of_factors(num):
-    return len(get_factors(num))
-
-# считываем данные
-n = int(input())
+s = input()
+char = input()
 
 # вызываем функцию
-print(number_of_factors(n))
+print(find_all(s, char))

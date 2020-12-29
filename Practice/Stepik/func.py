@@ -167,3 +167,22 @@ n = int(input())
 
 # вызываем функцию
 print(number_of_factors(n))
+
+
+
+# Задача 11
+# Напишите функцию, которая принимает два аргумента: строку target и символ symbol и возвращает список, содержащий все местоположения этого символа в строке.
+
+def find_all(target, symbol):
+    target_list = []
+    for i in range(len(target)):
+        if target[i] == symbol:
+            target_list.append(i)
+    return target_list
+
+# считываем данные
+s = input()
+char = input()
+
+# вызываем функцию
+print(find_all(s, char))
