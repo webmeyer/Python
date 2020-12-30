@@ -248,3 +248,27 @@ a, b, c = int(input()), int(input()), int(input())
 
 # вызываем функцию
 print(is_valid_triangle(a, b, c))
+
+
+
+# Задача 15
+# Напишите функцию, которая принимает в качестве аргумента натуральное число
+# и возвращает значение True если число является простым и False в противном случае.
+
+# объявление функции
+def is_prime(num):
+    if num % 2 == 0:
+        return num == 2
+    if num == 1:
+        return False
+    d = 3
+    while d * d <= num and num % d != 0:
+        d += 2
+    return d * d > num
+
+# считываем данные
+n = int(input())
+
+# вызываем функцию
+print(is_prime(n))
+
