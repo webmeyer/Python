@@ -1,16 +1,24 @@
 # объявление функции
-def is_prime(num):
-    if num % 2 == 0:
-        return num == 2
-    if num == 1:
+def is_password_good(password):
+    if len(password) < 8:
         return False
-    d = 3
-    while d * d <= num and num % d != 0:
-        d += 2
-    return d * d > num
+    flag1 = False
+    flag2 = False
+    flag3 = False
+    for c in password:
+        if c.isupper():
+            flag1 = True
+        elif c.islower():
+            flag2 = True
+        elif c.isdigit():
+            flag3 = True
+    return flag1 and flag2 and flag3
 
 # считываем данные
-n = int(input())
+txt = input()
 
 # вызываем функцию
-print(is_prime(n))
+print(is_password_good(txt))
+
+
+
