@@ -303,3 +303,31 @@ txt = input()
 
 # вызываем функцию
 print(is_password_good(txt))
+
+
+
+# Задача 17
+# Напишите функцию, которая принимает в качестве аргументов два слова word1 и word2
+# и возвращает значение True если слова имеют одинаковую длину и отличаются ровно в 1 символе и False в противном случае.
+
+# объявление функции
+def is_one_away(word1, word2):
+    count = 0
+    if len(word1) == len(word2):
+        for i in word1:
+            for j in word2:
+                if i == j:
+                    count += 1
+        if count == len(word1) - 1 or count - 1 == len(word1):
+            return True
+        else:
+            return False
+    else:
+        return False
+
+# считываем данные
+txt1 = input()
+txt2 = input()
+
+# вызываем функцию
+print(is_one_away(txt1, txt2))
