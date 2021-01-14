@@ -1,21 +1,19 @@
 # EXAMPLE
 
 # объявление функции
-def is_magic(date):
-    date_list = date.split('.')
-    magic_number = int(date_list[0]) * int(date_list[1])
-    last_num = date_list[-1]
-    last_num = last_num[2:]
-    if magic_number == int(last_num):
-        return True
-    else:
-        return False
+from math import factorial
+def compute_binom(n, k):
+    bino1 = factorial(n)
+    bino2 = factorial(k)*factorial(n-k)
+    return bino1//bino2
 
 # считываем данные
-date = input()
+n = int(input())
+k = int(input())
 
 # вызываем функцию
-print(is_magic(date))
+print(compute_binom(n, k))
+
 
 
 

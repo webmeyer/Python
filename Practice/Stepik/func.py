@@ -488,6 +488,20 @@ print(get_shipping_cost(n))
 
 # Задача 23
 
+# объявление функции
+from math import factorial
+def compute_binom(n, k):
+    bino1 = factorial(n)
+    bino2 = factorial(k)*factorial(n-k)
+    return bino1//bino2
+
+# считываем данные
+n = int(input())
+k = int(input())
+
+# вызываем функцию
+print(compute_binom(n, k))
+
 
 
 # Задача 24
@@ -570,3 +584,21 @@ date = input()
 
 # вызываем функцию
 print(is_magic(date))
+
+
+
+# Задача 27
+# Панграмма – это фраза, содержащая в себе все буквы алфавита. Обычно панграммы используют для презентации шрифтов, чтобы можно было в одной фразе рассмотреть все глифы.
+# Напишите функцию, которая принимает в качестве аргумента строку текста на английском языке и возвращает значение True если текст является панграммой и False в противном случае.
+
+# объявление функции
+# объявление функции
+def is_pangram(text):
+    text = text.replace(' ', '').lower()
+    return len(set(text)) == 26
+
+# считываем данные
+text = input()
+
+# вызываем функцию
+print(is_pangram(text))
