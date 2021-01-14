@@ -1,23 +1,17 @@
 # EXAMPLE
 
 # объявление функции
-def is_correct_bracket(text):
-    meetings = 0
-    for c in text:
-        if c == '(':
-            meetings += 1
-        elif c == ')':
-            meetings -= 1
-            if meetings < 0:
-                return False
+def draw_triangle():
+    for i in range(8):
+        k1 = 7 - i
+        k2 = 7 + i
+        for j in range(k2 + 1):
+            print('*' if j >= k1 else ' ', end='')
+        print()
 
-    return meetings == 0
 
-# считываем данные
-txt = input()
-
-# вызываем функцию
-print(is_correct_bracket(txt))
+# основная программа
+draw_triangle()  # вызов функции
 
 
 
