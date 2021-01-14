@@ -546,3 +546,27 @@ num = int(input())
 
 # вызываем функцию
 print(get_month(lan, num))
+
+
+
+# Задача 26
+# Магическая дата – это дата, когда день, умноженный на месяц, равен числу образованному последними двумя цифрами года.
+#
+# Напишите функцию, которая принимает в качестве аргумента строковое представление корректой даты и возвращает значение True если дата является магической и False в противном случае.
+
+# объявление функции
+def is_magic(date):
+    date_list = date.split('.')
+    magic_number = int(date_list[0]) * int(date_list[1])
+    last_num = date_list[-1]
+    last_num = last_num[2:]
+    if magic_number == int(last_num):
+        return True
+    else:
+        return False
+
+# считываем данные
+date = input()
+
+# вызываем функцию
+print(is_magic(date))

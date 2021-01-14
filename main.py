@@ -1,24 +1,21 @@
 # EXAMPLE
 
 # объявление функции
-def get_month(language, number):
-    lng_ru = ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь',
-              'декабрь']
-
-    lng_en = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october',
-              'november', 'december']
-
-    if language == 'ru':
-        return lng_ru[number - 1]
+def is_magic(date):
+    date_list = date.split('.')
+    magic_number = int(date_list[0]) * int(date_list[1])
+    last_num = date_list[-1]
+    last_num = last_num[2:]
+    if magic_number == int(last_num):
+        return True
     else:
-        return lng_en[number - 1]
+        return False
 
 # считываем данные
-lan = input()
-num = int(input())
+date = input()
 
 # вызываем функцию
-print(get_month(lan, num))
+print(is_magic(date))
 
 
 
