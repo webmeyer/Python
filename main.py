@@ -1,17 +1,23 @@
 # EXAMPLE
 
 # объявление функции
-def draw_triangle():
-    for i in range(8):
-        k1 = 7 - i
-        k2 = 7 + i
-        for j in range(k2 + 1):
-            print('*' if j >= k1 else ' ', end='')
-        print()
+def get_shipping_cost(quantity):
+    cost = 0
+    while quantity > 0:
+        if quantity == 1:
+            cost += 1000
+            quantity -= 1
+        else:
+            cost += 120
+            quantity -= 1
+    return cost
 
 
-# основная программа
-draw_triangle()  # вызов функции
+# считываем данные
+n = int(input())
+
+# вызываем функцию
+print(get_shipping_cost(n))
 
 
 
