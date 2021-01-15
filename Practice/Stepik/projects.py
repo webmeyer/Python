@@ -17,16 +17,32 @@
 # Операторы break, continue;
 # Работа с модулем random для генерации случайных чисел.
 
-import random
-print('Сыграем в "Угадай число"?')
-user_name = input('Введите Ваше имя..')
-num_generate = random.randint(1, 100)
-while True:
-    user_num = int(input(f'{user_name}, введите число от 1 до 100 \n'))
-    if user_num > num_generate:
-        print('Слишком много, попробуйте ещё раз')
-    elif user_num < num_generate:
-        print('Маловато, попробуйте ещё раз')
+import random                    # подключаем модуль
+number = random.randint(1, 101)  # генерируем случайное число от 1 до 100
+print('Добро пожаловать в числовую угадайку')
+
+def is_valid(num):
+    if num.isdigit():
+        num = int(num)
+        if 1 <= num <= 100:
+            return True
+        else:
+            return False
     else:
-        print('Поздравляем! Вы угадали!')
+        return False
+
+while True:
+    response = input('Введите число от 1 до 100:')
+    if not is_valid(responce):
+        print('А может быть все-таки введем целое число от 1 до 100?')
+        continue
+    response = int(response)
+    if val < number:
+        print('Ваше число меньше загаданного, попробуйте еще разок')
+    elif val > number:
+        print('Ваше число больше загаданного, попробуйте еще разок')
+    else:
+        print('Вы угадали, поздравляем!')
         break
+
+print('Спасибо, что играли в числовую угадайку. Еще увидимся...')
