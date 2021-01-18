@@ -1,5 +1,3 @@
-# EXAMPLE
-
 # Caesar crypt
 
 eng_lower_alphabet = 'abcdefghijklmnopqrstuvwxyz'

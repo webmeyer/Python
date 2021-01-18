@@ -1,7 +1,6 @@
 # Password generator
 
 import random as rnd
-
 def generate_passwords(long, chars):
 
     '''генерируем пасс'''
