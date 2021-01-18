@@ -1,5 +1,3 @@
-# EXAMPLE
-
 # Password generator
 
 import random as rnd
