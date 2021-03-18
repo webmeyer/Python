@@ -106,20 +106,14 @@ class Buffer:
             self.sum_numbers = 0
             self.count = 0
             self.list_numbers = self.list_numbers[5:]
-        print(self.list_numbers)
+        if len(self.list_numbers) != 0:
+            print(self.list_numbers)
 
-    def get_current_part(self):  # вернуть сохраненные в текущий момент элементы последовательности в порядке, в котором они были добавлены
-        return self.list_numbers
-
+        def get_current_part(
+                self):  # вернуть сохраненные в текущий момент элементы последовательности в порядке, в котором они были добавлены
+            return self.list_numbers
 
 buf = Buffer()
-buf.add(1, 2, 3)
-buf.get_current_part() # вернуть [1, 2, 3]
-buf.add(4, 5, 6) # print(15) – вывод суммы первой пятерки элементов
-buf.get_current_part() # вернуть [6]
-buf.add(7, 8, 9, 10) # print(40) – вывод суммы второй пятерки элементов
-buf.get_current_part() # вернуть []
-buf.add(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1) # print(5), print(5) – вывод сумм третьей и четвертой пятерки
-buf.get_current_part() # вернуть [1]
-buf.add(5, 4, 2, 7, 1, 87, 14, 2, 1, 6)
-buf.get_current_part()
+buf.add(*range(50))
+
+
